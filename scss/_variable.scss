@@ -1,0 +1,49 @@
+$mainColor : #4baf47;
+$titleColor:#dcb346;
+$backgroundColor:#f8f7f0;
+$iconColor:#eec044;
+$backgroundIconColor:#c5ce38;
+$textColor:#b4b4b0;
+@mixin after {
+    content:"";
+    position:absolute;
+}
+@mixin display ($style:center){
+    display: flex;
+    align-items: $style;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+html {
+    font-size: 62.5%;
+}
+.btn {
+    background-color: $mainColor;
+    padding:  2.5rem 5rem;
+    border-radius:15px;
+    outline: none;
+}
+@keyframes changeWidth {
+    from {
+        opacity: 0;
+        width: 0;
+        display: none;
+    }
+    to {
+        opacity: 1;
+        display: block;
+        display: block;
+    } 
+}
+@keyframes changeHeightList {
+    from {
+        height: 0;
+    }
+    to {
+        height:max-content
+    }
+    
+}
